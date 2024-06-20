@@ -64,6 +64,13 @@ module.exports = {
       },
     ],
   },
+
+  resolve: {
+    alias: {
+      'normalize-scss': path.resolve(__dirname, './node_modules/normalize-scss/sass/')
+    }
+  },
+
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
