@@ -1,5 +1,5 @@
 body {
-  font-family: "TTLakes", "Arial", serif;
+  font-family: 'TTLakes', 'Arial', serif;
   font-style: normal;
 }
 
@@ -11,7 +11,7 @@ body {
   @media (min-width: 1120px) {
     max-width: 1120px;
     margin: 0 auto;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
   }
 }
 
@@ -25,11 +25,11 @@ body {
     justify-content: space-between;
   }
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 1px;
-    background-color:  #D9FFF5;
+    background-color: #d9fff5;
     @media (min-width: 1120px) {
       display: none;
     }
@@ -57,105 +57,61 @@ body {
   align-items: center;
   column-gap: 16px;
   padding: 16px 16px;
-  list-style: none;
 }
 
 .menu-item {
   display: flex;
   width: 40px;
   height: 40px;
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
   @media (min-width: 768px) {
     display: block;
   }
   @media (min-width: 1120px) {
-    text-decoration: none;
     display: flex;
     width: 180px;
-    cursor: pointer;
   }
-  &__text--hidden {
-    display: none;
-  }
-  &__text {
-    @media (min-width: 1120px) {
-      display: inline;
-      text-decoration: none;
-      margin-right: 8px;
-      height: 40px;
-      white-space: nowrap;
-      padding-top: 8px;
-      color: #1B1C21;
-      font-family: "TTLakes", "Arial", serif;
-      font-style: normal;
-    }
-  }
-  &__image--repair-width-1120{
-    @media (min-width: 1120px) {
-      background-image: url("/src/img/Repair.png");
-      width: 40px;
-      height: 40px;
-    }
-  }
-  &__image--hidden {
-    @media (min-width: 1120px) {
-      display: flex;
-    }
-  }
-  &__image--checkstatus-width-1120 {
-    @media (min-width: 1120px) {
-      background-image: url("/src/img/Checkstatus.png");
-      width: 40px;
-      height: 40px;
-    }
+  &--link {
+    width: 75px;
+    height: 52px;
   }
   &--burger {
-    background-image: url("/src/img/Burger.png");
+    background-image: url('/src/img/Burger.png');
     background-repeat: no-repeat;
   }
   &--group {
     height: 52px;
   }
   &--repair {
-    background-image: url("/src/img/Repair.png");
+    background-image: url('/src/img/Repair.png');
     background-repeat: no-repeat;
     @media (min-width: 1120px) {
       background-image: none;
     }
   }
   &--checkstatus {
-    background-image: url("/src/img/Checkstatus.png");
+    background-image: url('/src/img/Checkstatus.png');
     background-repeat: no-repeat;
     @media (min-width: 1120px) {
       background-image: none;
     }
   }
   &--profile {
-    background-image: url("/src/img/Profile.png");
+    background-image: url('/src/img/Profile.png');
     background-repeat: no-repeat;
   }
   &--call {
-    background-image: url("/src/img/Call.png");
+    background-image: url('/src/img/Call.png');
     background-repeat: no-repeat;
   }
   &--chat {
-    background-image: url("/src/img/Chat.png");
+    background-image: url('/src/img/Chat.png');
     background-repeat: no-repeat;
-  }
-  &--link {
-    width: 75px;
-    height: 52px;
   }
   &--divider {
     width: 2px;
     height: 32px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     border-radius: 1px;
-  }
-  &--hidden {
-    display: none;
   }
   &--hidden-for-width1120 {
     @media (min-width: 1120px) {
@@ -170,10 +126,54 @@ body {
       height: 40px;
     }
   }
+  &--hidden {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (min-width: 1120px) {
+      display: none;
+    }
+  }
+  &__text--hidden {
+    display: none;
+  }
+  &__text {
+    @media (min-width: 1120px) {
+      display: inline;
+      text-decoration: none;
+      margin-right: 8px;
+      height: 40px;
+      white-space: nowrap;
+      padding-top: 8px;
+      color: #1b1c21;
+      font-family: 'TTLakes', 'Arial', serif;
+      font-style: normal;
+    }
+  }
+  &__image--repair-width-1120 {
+    @media (min-width: 1120px) {
+      background-image: url('/src/img/Repair.png');
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__image--checkstatus-width-1120 {
+    @media (min-width: 1120px) {
+      background-image: url('/src/img/Checkstatus.png');
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__image--hidden {
+    @media (min-width: 1120px) {
+      display: flex;
+    }
+  }
 }
 
 .main-info {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   width: 100%;
   @media (min-width: 768px) {
     width: 100%;
@@ -190,22 +190,11 @@ body {
   @media (min-width: 1120px) {
     display: none;
   }
-  &__text {
-    width: 268px;
-    height: 40px;
-    display: block;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1B1C21;
-    line-height: 40px;
-    margin: 0;
-    margin-left: 12px;
-  }
   &::before {
-    content: "";
+    content: '';
     width: 4px;
     height: 40px;
-    background-color: #41F6D7;
+    background-color: #41f6d7;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -217,6 +206,17 @@ body {
       display: flex;
       flex-wrap: nowrap;
     }
+  }
+  &__text {
+    width: 268px;
+    height: 40px;
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1b1c21;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 12px;
   }
   &--hidden {
     @media (min-width: 768px) {
@@ -257,23 +257,23 @@ body {
 
 .nav-item {
   height: auto;
-  padding: 8px;
   box-sizing: border-box;
   border: 2px solid transparent;
   @media (min-width: 768px) {
     display: flex;
   }
-  &__text {
+  &:hover {
+    border: 2px solid #88ffec;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  &__link {
+    padding: 8px;
     display: block;
     text-decoration: none;
     font-size: 16px;
-    color: #7E7E82;
+    color: #7e7e82;
     text-wrap: nowrap;
-  }
-  &--hover:hover{
-    border: 2px solid #88FFEC;
-    border-radius: 6px;
-    background-color: #FFFFFF;
   }
 }
 
@@ -285,9 +285,6 @@ body {
     display: flex;
     flex-direction: row;
   }
-  @media (min-width: 1120px) {
-
-  }
 }
 
 .text-block {
@@ -298,11 +295,12 @@ body {
 
 .text {
   width: 100%;
+  height: 100px;
   padding: 0 16px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #1B1C21;
+  color: #1b1c21;
   overflow: hidden;
   box-sizing: border-box;
   @media (min-width: 768px) {
@@ -316,24 +314,22 @@ body {
   }
 }
 
-.button {
+.read-more {
   display: flex;
-  background-color: #F8F8F8;
-  cursor: pointer;
-  border: none;
+  background-color: #f8f8f8;
   @media (min-width: 768px) {
     padding-top: 10px;
   }
   &__image {
-    background-image: url("/src/img/Expand.png");
+    background-image: url('/src/img/Expand.png');
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
   }
   &__text {
-    font-family: "TTLakes", "Arial", sans-serif;
+    font-family: 'TTLakes', 'Arial', sans-serif;
     font-weight: 700;
-    color: #1B1C21;
+    color: #1b1c21;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
