@@ -40,14 +40,15 @@ body {
 .brand-list-container {
   position: relative;
   height: 140px;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    height: 190px;
+  }
   &--opened {
     @media (min-width: 768px) {
       position: relative;
       height: 100%;
     }
-  }
-  @media (min-width: 768px) {
-    height: 206px;
   }
 }
 
