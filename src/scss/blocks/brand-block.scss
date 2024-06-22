@@ -1,0 +1,135 @@
+body {
+  font-family: "TTLakes", "Arial", serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #1B1C21;
+}
+
+.brand-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  height: 100%;
+  background-color: #F8F8F8;
+  border-top: 0.1px solid #41f6d7;
+  @media (min-width: 768px) {
+    min-width: 768px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1120px) {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.heading-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-image: linear-gradient(to right, #F8F8F8 40%, #FFFFFF 100%);
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+  &__title {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px;
+    color: #7E7E82;
+    text-transform: uppercase;
+  }
+}
+
+.brand-list-container {
+  position: relative;
+  height: 140px;
+  &--opened {
+    @media (min-width: 768px) {
+      position: relative;
+      height: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 206px;
+  }
+}
+
+.brand-list {
+  padding-left: 16px;
+  @media (min-width: 768px) {
+    display:flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  &__item {
+    width: 240px;
+    height: 72px;
+  }
+  &__link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    background-image: url("/src/img/Go.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 90% 50%;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    @media (min-width: 768px) {
+      width: 224px;
+      height: 72px;
+      padding: 16px;
+    }
+  }
+}
+
+.brand-list
+.brand-list__item {
+  @media (min-width: 768px) {
+    width: 224px;
+    height: 72px;
+  }
+}
+
+/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
+т.к. там специфиичность задана через селектор дочерних элементов*/
+.brand-block
+.swiper-pagination {
+    bottom: 18px;
+}
+
+.show-more-button {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 24px;
+    width: 150px;
+    height: 20px;
+  }
+  &__text {
+    font-family: "TTLakes", "Arial", sans-serif;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-wrap: nowrap;
+    padding-left: 25px;
+    background-image: url("/src/img/Expand.png");
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+  }
+}
+
+
+.swiper-pagination {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
