@@ -39,10 +39,10 @@ body {
 
 .repair-list-container {
   position: relative;
-  height: 140px;
+  height: 100%;
   overflow: hidden;
   @media (min-width: 768px) {
-    height: 190px;
+    height: 360px;
   }
   &--opened {
     @media (min-width: 768px) {
@@ -53,38 +53,42 @@ body {
 }
 
 .repair-list {
+  width: 100%;
   padding-left: 16px;
   padding-top: 16px;
+  padding-bottom: 52px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
-    gap: 24px;
     flex-wrap: wrap;
     padding-left: 0;
     padding-bottom: 16px;
+    row-gap: 16px;
+    column-gap: 24px;
   }
   &__item {
     width: 240px;
-    height: 72px;
+    height: 160px;
+    box-sizing: border-box;
   }
   &__link {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: top;
     box-sizing: border-box;
-    width: 240px;
-    height: 72px;
+    width: 100%;
+    height: 160px;
     padding: 16px;
     background-color: #ffffff;
     background-image: url('/src/img/Go.png');
     background-repeat: no-repeat;
     background-size: 15%;
-    background-position: 90% 50%;
+    background-position: 90% 85%;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     @media (min-width: 768px) {
       width: 224px;
-      height: 72px;
+      height: 160px;
       padding: 16px;
     }
   }
@@ -93,7 +97,7 @@ body {
 .repair-list .repair-list__item {
   @media (min-width: 768px) {
     width: 224px;
-    height: 72px;
+    height: 160px;
   }
 }
 
@@ -103,7 +107,7 @@ body {
   bottom: 18px;
 }
 
-.show-more-button {
+.show-more-repair-button {
   display: none;
   @media (min-width: 768px) {
     display: block;

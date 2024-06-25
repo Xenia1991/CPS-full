@@ -7,30 +7,20 @@ const buttonShowMore  = document.querySelector('.show-more-button');
 const buttonShowMoreText = buttonShowMore.querySelector('.show-more-button__text');
 const brandListContainer = document.querySelector('.brand-list-container');
 const swiperOptions = {
-    modules: [Pagination],
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 16,
-    slidesPerView: 'auto',
+  modules: [Pagination],
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 'auto',
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
 };
 
 if (screenWidth < 768) {
-    swiper = new Swiper('.swiper', swiperOptions);
-};
-
-const resizeScreen = function (event) {
-    if (swiper && event.target.innerWidth >= 768) {
-            swiper.enable();
-            swiper.destroy(true, true);
-            swiper = null;
-    } else if(!swiper && event.target.innerWidth < 768) {
-       swiper = new Swiper('.swiper', swiperOptions);
-    };
+  swiper = new Swiper('.brand-list-container', swiperOptions);
 };
 
 const toggleContainer = function () {
@@ -45,6 +35,18 @@ const toggleContainer = function () {
         buttonShowMoreText.textContent = 'Показать все';
         buttonShowMoreText.style.backgroundImage = 'url("/src/img/Expand.png")';
     }
+};
+
+const resizeScreen = function (event) {
+  if (swiper && event.target.innerWidth >= 768) {
+    console.log(swiper);
+    swiper.enable();
+    swiper.destroy(true, true);
+    swiper = null;
+  } else if(!swiper && event.target.innerWidth < 768) {
+    console.log(Boolean(swiper));
+    swiper = new Swiper('.brand-list-container', swiperOptions);
+  };
 };
 
 window.addEventListener('resize', resizeScreen);
