@@ -1,0 +1,135 @@
+body {
+  font-family: 'TTLakes', 'Arial', serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #1b1c21;
+}
+
+.prices-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  height: 100%;
+  background-color: #f8f8f8;
+  border-top: 0.4px solid #d9fff5;
+  @media (min-width: 768px) {
+    min-width: 768px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1120px) {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+.heading-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+  &__title {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px;
+    color: #7e7e82;
+    text-transform: uppercase;
+  }
+}
+
+.prices-block-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    height: auto;
+  }
+}
+
+.prices-list {
+  // width: 100%;
+  // padding-left: 16px;
+  // padding-top: 16px;
+  // padding-bottom: 52px;
+  @media (min-width: 768px) {
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 64px 64px 64px 64px 64px 64px;
+  }
+  &__item {
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: column;
+    // width: 260px;
+    // height: 200px;
+    // box-sizing: border-box;
+    // background-color: #ffffff;
+    // border: 1px solid #eaeaea;
+    // border-radius: 10px;
+    // padding-left: 16px;
+    // position: relative;
+    // padding-bottom: 16px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__heading {
+    // font-size: 14px;
+    // color: #7e7e82;
+    // padding-top: 16px;
+    @media (min-width: 768px) {
+
+    }
+  }
+  &__button {
+    // width: 119px;
+    // height: 32px;
+    // box-sizing: border-box;
+    // padding-left: 18px;
+    // padding-top: 3px;
+    // text-align: left;
+    // font-size: 12px;
+    // color: white;
+    // text-transform: uppercase;
+    // background-color: #ff3e79;
+    // border-radius: 15px;
+    // background-image: url('/src/img/Dropdown.png');
+    // background-repeat: no-repeat;
+    // background-position: 88% 50%;
+    // position: absolute;
+    // left: 125px;
+    // top: 150px;
+    @media (min-width: 768px) {
+
+    }
+  }
+}
+
+/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
+т.к. там специфиичность задана через селектор дочерних элементов*/
+.prices-block .swiper-pagination {
+  bottom: 18px;
+}
+
+.extra-info {
+  padding: 0 16px 16px 16px;
+  max-width: 420px;
+  &__text {
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__link {
+    display: inline;
+    font-size: 16px;
+    line-height: 10px;
+    color: black;
+    &::after {
+      content: url('/src/img/More.png');
+      padding-left: 8px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
