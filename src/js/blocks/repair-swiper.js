@@ -25,7 +25,6 @@ if (screenWidth < 768) {
 
 const resizeScreen = function (event) {
   if (repairSwiper && event.target.innerWidth >= 768) {
-    console.log(repairSwiper);
     repairSwiper.enable();
     repairSwiper.destroy(true, true);
     repairSwiper = null;

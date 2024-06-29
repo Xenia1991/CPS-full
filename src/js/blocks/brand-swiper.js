@@ -39,12 +39,10 @@ const toggleContainer = function () {
 
 const resizeScreen = function (event) {
   if (swiper && event.target.innerWidth >= 768) {
-    console.log(swiper);
     swiper.enable();
     swiper.destroy(true, true);
     swiper = null;
   } else if(!swiper && event.target.innerWidth < 768) {
-    console.log(Boolean(swiper));
     swiper = new Swiper('.brand-list-container', swiperOptions);
   };
 };
