@@ -1,0 +1,52 @@
+.page-container {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 320px 1120px;
+    grid-template-areas: 'menu-block main-block'
+                         'menu-block brand-block'
+                         'menu-block repair-block'
+                         'menu-block prices-block'
+                         'menu-block footer-block';
+  }
+  justify-content: center;
+  position: relative;
+}
+
+.main-block-container {
+  @media (min-width: 1120px) {
+    grid-area: main-block;
+  }
+}
+
+.brand-block {
+  @media (min-width: 1120px) {
+    grid-area: brand-block;
+  }
+}
+
+.repair-block {
+  @media (min-width: 1120px) {
+    grid-area: repair-block;
+  }
+}
+
+.prices-block {
+  @media (min-width: 1120px) {
+    grid-area: prices-block;
+  }
+}
+
+.footer-block {
+  @media (min-width: 1120px) {
+    grid-area: footer-block;
+  }
+}
+
+.sidebar-container {
+  @media (min-width: 1120px) {
+    grid-area: menu-block;
+  }
+}
+
+
+
