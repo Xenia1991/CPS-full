@@ -379,7 +379,7 @@
           >
         </footer>
       </section>
-      <footer class="footer-block">
+      <section class="footer-block">
         <p class="footer-block__copyright">
           <span class="footer-block__first-part">&copy; 2019</span>
           <span class="footer-block__second-part"
@@ -391,7 +391,7 @@
           >Информация, размещенная на данной странице, не является публичной
           офертой
         </p>
-      </footer>
+      </section>
       <aside class="sidebar-container">
         <section class="top-block">
           <header class="navigation-header">
@@ -447,8 +447,12 @@
             ></button>
           </nav>
           <section class="contact-info">
-            <p class="contact-info__mail">mail@cps.com</p>
-            <p class="contact-info__phone">8 800 890 8900</p>
+            <p class="contact-info__mail">
+              <a href="mailto:mail@cps.com">mail@cps.com</a>
+            </p>
+            <p class="contact-info__phone">
+              <a href="tel:8-800-890-8900">8 800 890 8900</a>
+            </p>
           </section>
           <nav class="lang-navigation">
             <button class="lang-navigation__item">RU</button>
@@ -457,6 +461,28 @@
           </nav>
         </footer>
       </aside>
+      <section class="call-container--opened">
+        <button class="call-close-button">
+        </button>
+        <h2 class="call-header">Заказать звонок</h2>
+        <form action="#" method="post" class="call-form">
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="  Телефон"
+            class="call-form__phone-input"
+          >
+        </form>
+        <section class="personal-data">
+          Нажимая “отправить”, вы даете согласие на
+          <a href="/" class="personal-data--pink">обработку персональных данных</a>
+          и соглашаетесь с нашей <a href="/" class="personal-data--pink">политикой конфиденциальности.</a>
+        </section>
+        <button class="call-send-button">
+          <span class="call-send-button__text">Отправить</span>
+        </button>
+      </section>
     </section>
   </body>
 </html>
