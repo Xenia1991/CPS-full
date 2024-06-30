@@ -1054,14 +1054,14 @@ template {
   height: 52px;
 }
 .menu-item--burger {
-  background-image: url("/src/img/Burger.png");
+  background-image: url(./static/Burger.png);
   background-repeat: no-repeat;
 }
 .menu-item--group {
   height: 52px;
 }
 .menu-item--repair {
-  background-image: url("/src/img/Repair.png");
+  background-image: url(./static/Repair.png);
   background-repeat: no-repeat;
 }
 @media (min-width: 1440px) {
@@ -1070,7 +1070,7 @@ template {
   }
 }
 .menu-item--checkstatus {
-  background-image: url("/src/img/Checkstatus.png");
+  background-image: url(./static/Checkstatus.png);
   background-repeat: no-repeat;
 }
 @media (min-width: 1440px) {
@@ -1079,15 +1079,15 @@ template {
   }
 }
 .menu-item--profile {
-  background-image: url("/src/img/Profile.png");
+  background-image: url(./static/Profile.png);
   background-repeat: no-repeat;
 }
 .menu-item--call {
-  background-image: url("/src/img/Call.png");
+  background-image: url(./static/Call.png);
   background-repeat: no-repeat;
 }
 .menu-item--chat {
-  background-image: url("/src/img/Chat.png");
+  background-image: url(./static/Chat.png);
   background-repeat: no-repeat;
 }
 .menu-item--divider {
@@ -1140,14 +1140,14 @@ template {
 }
 @media (min-width: 1440px) {
   .menu-item__image--repair-width-1440 {
-    background-image: url("/src/img/Repair.png");
+    background-image: url(./static/Repair.png);
     width: 40px;
     height: 40px;
   }
 }
 @media (min-width: 1440px) {
   .menu-item__image--checkstatus-width-1440 {
-    background-image: url("/src/img/Checkstatus.png");
+    background-image: url(./static/Checkstatus.png);
     width: 40px;
     height: 40px;
   }
@@ -1340,7 +1340,7 @@ template {
   }
 }
 .read-more__image {
-  background-image: url("/src/img/Expand.png");
+  background-image: url(./static/Expand.png);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -1467,7 +1467,7 @@ body {
   height: 72px;
   padding: 16px;
   background-color: #ffffff;
-  background-image: url("/src/img/Go.png");
+  background-image: url(./static/Go.png);
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: 90% 50%;
@@ -1517,7 +1517,7 @@ body {
   line-height: 24px;
   text-wrap: nowrap;
   padding-left: 25px;
-  background-image: url("/src/img/Expand.png");
+  background-image: url(./static/Expand.png);
   background-repeat: no-repeat;
   background-position: 0 -1px;
 }
@@ -1804,7 +1804,7 @@ button.swiper-pagination-bullet {
   height: 160px;
   padding: 16px;
   background-color: #ffffff;
-  background-image: url("/src/img/Go.png");
+  background-image: url(./static/Go.png);
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: 90% 85%;
@@ -1854,7 +1854,7 @@ button.swiper-pagination-bullet {
   line-height: 24px;
   text-wrap: nowrap;
   padding-left: 25px;
-  background-image: url("/src/img/Expand.png");
+  background-image: url(./static/Expand.png);
   background-repeat: no-repeat;
   background-position: 0 -1px;
 }
@@ -2001,7 +2001,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   background-color: #ff3e79;
   border-radius: 15px;
-  background-image: url("/src/img/Dropdown.png");
+  background-image: url(./static/Dropdown.png);
   background-repeat: no-repeat;
   background-position: 88% 50%;
   position: absolute;
@@ -2088,7 +2088,7 @@ button.swiper-pagination-bullet {
   color: black;
 }
 .extra-info__link::after {
-  content: url("/src/img/More.png");
+  content: url(./static/More.png);
   padding-left: 8px;
   position: relative;
   top: 2px;
@@ -2239,7 +2239,7 @@ button.swiper-pagination-bullet {
           filter: opacity(80%);
 }
 .navigation-header--close-image {
-  background-image: url("/src/img/Close.png");
+  background-image: url(./static/Close.png);
   background-repeat: no-repeat;
 }
 @media (min-width: 1440px) {
@@ -2248,7 +2248,7 @@ button.swiper-pagination-bullet {
   }
 }
 .navigation-header--search-image {
-  background-image: url("/src/img/Search.png");
+  background-image: url(./static/Search.png);
   background-repeat: no-repeat;
 }
 
@@ -2316,15 +2316,15 @@ button.swiper-pagination-bullet {
           filter: opacity(80%);
 }
 .contact-buttons--call-image {
-  background-image: url("/src/img/Call.png");
+  background-image: url(./static/Call.png);
   background-repeat: no-repeat;
 }
 .contact-buttons--chat-image {
-  background-image: url("/src/img/Chat.png");
+  background-image: url(./static/Chat.png);
   background-repeat: no-repeat;
 }
 .contact-buttons--profile-image {
-  background-image: url("/src/img/Profile.png");
+  background-image: url(./static/Profile.png);
   background-repeat: no-repeat;
 }
 
@@ -2455,7 +2455,7 @@ body {
 .call-close-button {
   width: 40px;
   height: 40px;
-  background-image: url(/src/img/Close.png);
+  background-image: url(./static/Close.png);
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -2598,7 +2598,7 @@ body {
 .feedback-close-button {
   width: 40px;
   height: 40px;
-  background-image: url(/src/img/Close.png);
+  background-image: url(./static/Close.png);
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
