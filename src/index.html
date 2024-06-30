@@ -46,7 +46,7 @@
                 <li
                   class="menu-item menu-item--hidden menu-item--hidden-for-width1440"
                 >
-                  <a href="/" class="menu-item menu-item--chat"> </a>
+                  <button href="/" class="menu-item menu-item--chat"> </button>
                 </li>
                 <li
                   class="menu-item menu-item--hidden menu-item--hidden-for-width1440"
@@ -471,23 +471,63 @@
             pattern="[0-9]{11}"
             placeholder="Телефон"
             autofocus
+            required
             minlength="11"
             maxlength="11"
           />
+          <section class="personal-data">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="/" class="personal-data--pink"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="/" class="personal-data--pink"
+              >политикой конфиденциальности.</a
+            >
+          </section>
+          <button class="call-send-button">
+            <span class="call-send-button__text">Отправить</span>
+          </button>
         </form>
-        <section class="personal-data">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="/" class="personal-data--pink"
-            >обработку персональных данных</a
-          >
-          и соглашаетесь с нашей
-          <a href="/" class="personal-data--pink"
-            >политикой конфиденциальности.</a
-          >
-        </section>
-        <button class="call-send-button">
-          <span class="call-send-button__text">Отправить</span>
-        </button>
+      </section>
+      <section class="feedback-container">
+        <button class="feedback-close-button"> </button>
+        <h2 class="feedback-header">Обратная связь</h2>
+        <form action="#" method="post" class="feedback-form">
+          <input
+            class="feedback-form__input"
+            type="text"
+            placeholder="Имя"
+            autofocus
+            required
+          />
+          <input
+            class="feedback-form__input"
+            type="text"
+            placeholder="Фамилия"
+            required
+          />
+          <input
+            class="feedback-form__input"
+            type="email"
+            placeholder="Электронная почта"
+            required
+          />
+          <textarea name="feedback" class="feedback-form__text"></textarea>
+          <section class="personal-data">
+            Нажимая “отправить”, вы даете согласие на
+            <a href="/" class="personal-data--pink"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="/" class="personal-data--pink"
+              >политикой конфиденциальности.</a
+            >
+          </section>
+          <button class="feedback-send-button" type="submit">
+            <span class="feedback-send-button__text">Отправить</span>
+          </button>
+        </form>
       </section>
       <section class="page-spacer"></section>
     </section>

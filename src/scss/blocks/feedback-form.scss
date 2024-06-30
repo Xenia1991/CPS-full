@@ -1,4 +1,4 @@
-.call-container {
+.feedback-container {
   display: none;
   &--opened {
     display: flex;
@@ -26,7 +26,7 @@
   }
 }
 
-.call-close-button {
+.feedback-close-button {
   width: 40px;
   height: 40px;
   background-image: url(/src/img/Close.png);
@@ -38,7 +38,7 @@
   }
 }
 
-.call-header {
+.feedback-header {
   position: relative;
   box-sizing: border-box;
   padding-top: 40px;
@@ -65,13 +65,14 @@
   }
 }
 
-.call-form {
+.feedback-form {
   display: flex;
   flex-direction: column;
   padding-top: 24px;
   padding-bottom: 16px;
-  &__phone-input {
+  &__input {
     padding-left: 16px;
+    padding-right: 16px;
     width: 100%;
     height: 48px;
     font-family: "TTLakes";
@@ -79,6 +80,18 @@
     border-radius: 8px;
     font-size: 16px;
     box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  &__text {
+    padding: 5px 16px;
+    width: 100%;
+    height: 118px;
+    font-family: "TTLakes";
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
   }
 }
 
@@ -91,7 +104,7 @@
   }
 }
 
-.call-send-button {
+.feedback-send-button {
   display: flex;
   width: 136px;
   height: 32px;
