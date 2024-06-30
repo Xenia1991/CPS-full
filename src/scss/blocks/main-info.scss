@@ -77,36 +77,36 @@
     height: 52px;
   }
   &--burger {
-    background-image: url('/src/img/Burger.png');
+    background-image: url('../img/Burger.png');
     background-repeat: no-repeat;
   }
   &--group {
     height: 52px;
   }
   &--repair {
-    background-image: url('/src/img/Repair.png');
+    background-image: url('../img/Repair.png');
     background-repeat: no-repeat;
     @media (min-width: 1440px) {
       background-image: none;
     }
   }
   &--checkstatus {
-    background-image: url('/src/img/Checkstatus.png');
+    background-image: url('../img/Checkstatus.png');
     background-repeat: no-repeat;
     @media (min-width: 1440px) {
       background-image: none;
     }
   }
   &--profile {
-    background-image: url('/src/img/Profile.png');
+    background-image: url('../img/Profile.png');
     background-repeat: no-repeat;
   }
   &--call {
-    background-image: url('/src/img/Call.png');
+    background-image: url('../img/Call.png');
     background-repeat: no-repeat;
   }
   &--chat {
-    background-image: url('/src/img/Chat.png');
+    background-image: url('../img/Chat.png');
     background-repeat: no-repeat;
   }
   &--divider {
@@ -155,14 +155,14 @@
   }
   &__image--repair-width-1440 {
     @media (min-width: 1440px) {
-      background-image: url('/src/img/Repair.png');
+      background-image: url('../img/Repair.png');
       width: 40px;
       height: 40px;
     }
   }
   &__image--checkstatus-width-1440 {
     @media (min-width: 1440px) {
-      background-image: url('/src/img/Checkstatus.png');
+      background-image: url('../img/Checkstatus.png');
       width: 40px;
       height: 40px;
     }
@@ -330,7 +330,7 @@
     padding-top: 10px;
   }
   &__image {
-    background-image: url('/src/img/Expand.png');
+    background-image: url('../img/Expand.png');
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;

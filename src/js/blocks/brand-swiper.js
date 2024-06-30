@@ -28,12 +28,12 @@ const toggleContainer = function () {
         brandListContainer.classList.remove('brand-list-container');
         brandListContainer.classList.add('brand-list-container--opened');
         buttonShowMoreText.textContent = 'Скрыть все';
-        buttonShowMoreText.style.backgroundImage = 'url("/src/img/Hide.png")';
+        buttonShowMoreText.style.backgroundImage = 'url("../../img/Hide.png")';
     } else {
         brandListContainer.classList.remove('brand-list-container--opened');
         brandListContainer.classList.add('brand-list-container');
         buttonShowMoreText.textContent = 'Показать все';
-        buttonShowMoreText.style.backgroundImage = 'url("/src/img/Expand.png")';
+        buttonShowMoreText.style.backgroundImage = 'url("../../img/Expand.png")';
     }
 };
 

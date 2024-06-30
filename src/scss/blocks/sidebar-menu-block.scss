@@ -75,14 +75,14 @@
     }
   }
   &--close-image {
-    background-image: url('/src/img/Close.png');
+    background-image: url('../img/Close.png');
     background-repeat: no-repeat;
     @media (min-width: 1440px) {
       display: none;
     }
   }
   &--search-image {
-    background-image: url('/src/img/Search.png');
+    background-image: url('../img/Search.png');
     background-repeat: no-repeat;
   }
 }
@@ -150,15 +150,15 @@
     }
   }
   &--call-image {
-    background-image: url('/src/img/Call.png');
+    background-image: url('../img/Call.png');
     background-repeat: no-repeat;
   }
   &--chat-image {
-    background-image: url('/src/img/Chat.png');
+    background-image: url('../img/Chat.png');
     background-repeat: no-repeat;
   }
   &--profile-image {
-    background-image: url('/src/img/Profile.png');
+    background-image: url('../img/Profile.png');
     background-repeat: no-repeat;
   }
 }

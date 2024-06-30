@@ -45,7 +45,6 @@ body {
   &--opened {
     @media (min-width: 768px) {
       position: relative;
-      // height: 100%;
     }
   }
 }
@@ -74,7 +73,7 @@ body {
     height: 72px;
     padding: 16px;
     background-color: #ffffff;
-    background-image: url('/src/img/Go.png');
+    background-image: url('../img/Go.png');
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: 90% 50%;
@@ -120,7 +119,7 @@ body {
     line-height: 24px;
     text-wrap: nowrap;
     padding-left: 25px;
-    background-image: url('/src/img/Expand.png');
+    background-image: url('../img/Expand.png');
     background-repeat: no-repeat;
     background-position: 0 -1px;
   }
