@@ -41,7 +41,7 @@
                 <li
                   class="menu-item menu-item--hidden menu-item--hidden-for-width1440"
                 >
-                  <a href="/" class="menu-item menu-item--call"> </a>
+                  <button href="/" class="menu-item menu-item--call"> </button>
                 </li>
                 <li
                   class="menu-item menu-item--hidden menu-item--hidden-for-width1440"
@@ -461,17 +461,19 @@
           </nav>
         </footer>
       </aside>
-      <section class="call-container--opened">
+      <section class="call-container">
         <button class="call-close-button">
         </button>
         <h2 class="call-header">Заказать звонок</h2>
         <form action="#" method="post" class="call-form">
           <input
-            type="number"
-            id="phone"
-            name="phone"
-            placeholder="  Телефон"
             class="call-form__phone-input"
+            type="tel"
+            pattern="[0-9]{11}"
+            placeholder="Телефон"
+            autofocus
+            minlength="11"
+            maxlength="11"
           >
         </form>
         <section class="personal-data">
