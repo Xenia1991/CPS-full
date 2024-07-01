@@ -38,12 +38,12 @@ const toggleContainer = function () {
         repairListContainer.classList.remove('repair-list-container');
         repairListContainer.classList.add('repair-list-container--opened');
         repairShowMoreButtonText.textContent = 'Скрыть все';
-        repairShowMoreButtonText.style.backgroundImage = 'url("../img/Hide.png")';
+        repairShowMoreButtonText.style.backgroundImage = 'url("../../img/Hide.png")';
     } else {
         repairListContainer.classList.remove('repair-list-container--opened');
         repairListContainer.classList.add('repair-list-container');
         repairShowMoreButtonText.textContent = 'Показать все';
-        repairShowMoreButtonText.style.backgroundImage = 'url("../img/Expand.png")';
+        repairShowMoreButtonText.style.backgroundImage = 'url("../../img/Expand.png")';
     }
 };
 
