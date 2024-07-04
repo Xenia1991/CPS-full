@@ -29,6 +29,9 @@
     top: 24px;
     left: -60px;
   }
+  @media (min-width: 1440px) {
+    display: block;
+  }
 }
 
 .call-header {

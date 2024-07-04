@@ -58,15 +58,23 @@
       font-style: normal;
     }
   }
-  &--close {
+  &__close {
     width: 40px;
     height: 40px;
     background-image: url('../img/Close.png');
     background-repeat: no-repeat;
-    @media (min-width: 1440px) {
-      display: none;
+    &--menu {
+      @media (min-width: 1440px) {
+        display: none;
+      }
+    }
+    &--form {
+      @media (min-width: 1440px) {
+        display: block;
+      }
     }
   }
+
   &--search{
     background-image: url('../img/Search.png');
     background-repeat: no-repeat;
