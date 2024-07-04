@@ -86,24 +86,3 @@
     cursor: pointer;
   }
 }
-
-.call-send-button {
-  display: flex;
-  width: 136px;
-  height: 32px;
-  background-color: #FF3E79;
-  border: none;
-  border-radius: 14px;
-  justify-content: space-between;
-  background-image: url('/src/img/Dropdown.png');
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-  align-self: flex-end;
-  &__text {
-    text-transform: uppercase;
-    display: block;
-    align-self: center;
-    color: white;
-    font-weight: 500;
-  }
-}
