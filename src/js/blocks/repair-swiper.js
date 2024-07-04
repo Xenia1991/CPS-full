@@ -3,8 +3,8 @@ import { Pagination } from 'swiper/modules';
 
 let repairSwiper;
 const screenWidth = window.window.innerWidth;
-const repairShowMoreButton  = document.querySelector('.show-more-repair-button');
-const repairShowMoreButtonText = repairShowMoreButton.querySelector('.show-more-repair-button__text');
+const repairShowMoreButton  = document.querySelector('.show-more-button--repair');
+const repairShowMoreButtonText = repairShowMoreButton.querySelector('.show-more-button__text');
 const repairListContainer = document.querySelector('.repair-list-container');
 const swiperOptions = {
   modules: [Pagination],

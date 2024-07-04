@@ -1,0 +1,36 @@
+.services-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  border-top: 0.4px solid #d9fff5;
+  @media (min-width: 768px) {
+    min-width: 768px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.heading-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+  &__title {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px;
+    color: #7e7e82;
+    text-transform: uppercase;
+  }
+}
+
+/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
+т.к. там специфиичность задана через селектор дочерних элементов*/
+.services-block .swiper-pagination {
+  bottom: 18px;
+}

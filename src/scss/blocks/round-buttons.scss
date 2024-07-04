@@ -1,0 +1,35 @@
+.round-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  &--burger {
+    background-image: url('../img/Burger.png');
+    background-repeat: no-repeat;
+  }
+  &--repair {
+    background-image: url('../img/Repair.png');
+    background-repeat: no-repeat;
+    @media (min-width: 1440px) {
+      background-image: none;
+    }
+  }
+  &--checkstatus {
+    background-image: url('../img/Checkstatus.png');
+    background-repeat: no-repeat;
+    @media (min-width: 1440px) {
+      background-image: none;
+    }
+  }
+  &--profile {
+    background-image: url('../img/Profile.png');
+    background-repeat: no-repeat;
+  }
+  &--call {
+    background-image: url('../img/Call.png');
+    background-repeat: no-repeat;
+  }
+  &--chat {
+    background-image: url('../img/Chat.png');
+    background-repeat: no-repeat;
+  }
+}
