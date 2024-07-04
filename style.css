@@ -2097,6 +2097,92 @@ body {
   color: #1b1c21;
 }
 
+.round-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.round-button--burger {
+  background-image: url(./static/Burger.png);
+  background-repeat: no-repeat;
+}
+.round-button--repair {
+  background-image: url(./static/Repair.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button--repair {
+    display: flex;
+    justify-content: flex-start;
+    width: 190px;
+    height: 40px;
+    background-image: url(./static/Repair.png);
+    background-position: 95%;
+  }
+}
+.round-button--checkstatus {
+  background-image: url(./static/Checkstatus.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button--checkstatus {
+    display: flex;
+    justify-content: flex-start;
+    width: 190px;
+    height: 40px;
+    background-image: url(./static/Checkstatus.png);
+    background-position: 95%;
+  }
+}
+.round-button--profile {
+  background-image: url(./static/Profile.png);
+  background-repeat: no-repeat;
+}
+.round-button--call {
+  background-image: url(./static/Call.png);
+  background-repeat: no-repeat;
+}
+.round-button--chat {
+  background-image: url(./static/Chat.png);
+  background-repeat: no-repeat;
+}
+.round-button__text--hidden {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .round-button__text {
+    display: inline;
+    text-decoration: none;
+    margin-right: 8px;
+    height: 40px;
+    white-space: nowrap;
+    padding-top: 8px;
+    color: #1b1c21;
+    font-family: "TTLakes", "Arial", serif;
+    font-style: normal;
+  }
+}
+.round-button__close {
+  width: 40px;
+  height: 40px;
+  background-image: url(./static/Close.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button__close--menu {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .round-button__close--form {
+    display: block;
+  }
+}
+.round-button--search {
+  background-image: url(./static/Search.png);
+  background-repeat: no-repeat;
+}
+
 .call-container {
   display: none;
 }
@@ -2131,6 +2217,11 @@ body {
     position: absolute;
     top: 24px;
     left: -60px;
+  }
+}
+@media (min-width: 1440px) {
+  .call-button {
+    display: block;
   }
 }
 
@@ -2427,87 +2518,6 @@ body {
   background-image: url(./static/Expand.png);
   background-repeat: no-repeat;
   background-position: 0 -1px;
-}
-
-.round-button {
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
-.round-button--burger {
-  background-image: url(./static/Burger.png);
-  background-repeat: no-repeat;
-}
-.round-button--repair {
-  background-image: url(./static/Repair.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .round-button--repair {
-    display: flex;
-    justify-content: flex-start;
-    width: 190px;
-    height: 40px;
-    background-image: url(./static/Repair.png);
-    background-position: 95%;
-  }
-}
-.round-button--checkstatus {
-  background-image: url(./static/Checkstatus.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .round-button--checkstatus {
-    display: flex;
-    justify-content: flex-start;
-    width: 190px;
-    height: 40px;
-    background-image: url(./static/Checkstatus.png);
-    background-position: 95%;
-  }
-}
-.round-button--profile {
-  background-image: url(./static/Profile.png);
-  background-repeat: no-repeat;
-}
-.round-button--call {
-  background-image: url(./static/Call.png);
-  background-repeat: no-repeat;
-}
-.round-button--chat {
-  background-image: url(./static/Chat.png);
-  background-repeat: no-repeat;
-}
-.round-button__text--hidden {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .round-button__text {
-    display: inline;
-    text-decoration: none;
-    margin-right: 8px;
-    height: 40px;
-    white-space: nowrap;
-    padding-top: 8px;
-    color: #1b1c21;
-    font-family: "TTLakes", "Arial", serif;
-    font-style: normal;
-  }
-}
-.round-button--close {
-  width: 40px;
-  height: 40px;
-  background-image: url(./static/Close.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .round-button--close {
-    display: none;
-  }
-}
-.round-button--search {
-  background-image: url(./static/Search.png);
-  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map*/
