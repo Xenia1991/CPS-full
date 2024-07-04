@@ -1033,11 +1033,6 @@ template {
   padding: 16px 16px;
 }
 
-.menu-item {
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
 @media (min-width: 768px) {
   .menu-item {
     display: block;
@@ -1046,49 +1041,15 @@ template {
 @media (min-width: 1440px) {
   .menu-item {
     display: flex;
-    width: 180px;
+    width: 190px;
   }
 }
 .menu-item--link {
   width: 75px;
   height: 52px;
 }
-.menu-item--burger {
-  background-image: url(./static/Burger.png);
-  background-repeat: no-repeat;
-}
 .menu-item--group {
   height: 52px;
-}
-.menu-item--repair {
-  background-image: url(./static/Repair.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .menu-item--repair {
-    background-image: none;
-  }
-}
-.menu-item--checkstatus {
-  background-image: url(./static/Checkstatus.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .menu-item--checkstatus {
-    background-image: none;
-  }
-}
-.menu-item--profile {
-  background-image: url(./static/Profile.png);
-  background-repeat: no-repeat;
-}
-.menu-item--call {
-  background-image: url(./static/Call.png);
-  background-repeat: no-repeat;
-}
-.menu-item--chat {
-  background-image: url(./static/Chat.png);
-  background-repeat: no-repeat;
 }
 .menu-item--divider {
   width: 2px;
@@ -1099,14 +1060,6 @@ template {
 @media (min-width: 1440px) {
   .menu-item--hidden-for-width1440 {
     display: none;
-  }
-}
-@media (min-width: 1440px) {
-  .menu-item--visible-for-width1440 {
-    display: flex;
-    justify-content: flex-start;
-    width: 190px;
-    height: 40px;
   }
 }
 .menu-item--hidden {
@@ -1120,41 +1073,6 @@ template {
 @media (min-width: 1440px) {
   .menu-item--hidden {
     display: none;
-  }
-}
-.menu-item__text--hidden {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .menu-item__text {
-    display: inline;
-    text-decoration: none;
-    margin-right: 8px;
-    height: 40px;
-    white-space: nowrap;
-    padding-top: 8px;
-    color: #1b1c21;
-    font-family: "TTLakes", "Arial", serif;
-    font-style: normal;
-  }
-}
-@media (min-width: 1440px) {
-  .menu-item__image--repair-width-1440 {
-    background-image: url(./static/Repair.png);
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (min-width: 1440px) {
-  .menu-item__image--checkstatus-width-1440 {
-    background-image: url(./static/Checkstatus.png);
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (min-width: 1440px) {
-  .menu-item__image--hidden {
-    display: flex;
   }
 }
 
@@ -1381,48 +1299,6 @@ template {
   }
 }
 
-body {
-  font-family: "TTLakes", "Arial", serif;
-  font-style: normal;
-}
-
-.brand-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-color: #f8f8f8;
-  border-top: 0.4px solid #d9fff5;
-}
-@media (min-width: 768px) {
-  .brand-block {
-    min-width: 768px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 1440px) {
-  .brand-block {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
-.heading-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
-}
-@media (min-width: 768px) {
-  .heading-block {
-    min-width: 768px;
-  }
-}
-.heading-block__title {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 16px;
-  color: #7e7e82;
-  text-transform: uppercase;
-}
-
 .brand-list-container {
   position: relative;
   height: 140px;
@@ -1486,39 +1362,6 @@ body {
     width: 224px;
     height: 72px;
   }
-}
-
-/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
-т.к. там специфиичность задана через селектор дочерних элементов*/
-.brand-block .swiper-pagination {
-  bottom: 18px;
-}
-
-.show-more-button {
-  display: none;
-}
-@media (min-width: 768px) {
-  .show-more-button {
-    display: block;
-    background-color: #f8f8f8;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding-left: 24px;
-    width: 150px;
-    height: 20px;
-  }
-}
-.show-more-button__text {
-  font-family: "TTLakes", "Arial", sans-serif;
-  color: #1b1c21;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-wrap: nowrap;
-  padding-left: 25px;
-  background-image: url(./static/Expand.png);
-  background-repeat: no-repeat;
-  background-position: 0 -1px;
 }
 
 @media (min-width: 768px) {
@@ -1715,43 +1558,6 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-.repair-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-color: #f8f8f8;
-  border-top: 0.4px solid #d9fff5;
-}
-@media (min-width: 768px) {
-  .repair-block {
-    min-width: 768px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 1440px) {
-  .repair-block {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
-.heading-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
-}
-@media (min-width: 768px) {
-  .heading-block {
-    min-width: 768px;
-  }
-}
-.heading-block__title {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 16px;
-  color: #7e7e82;
-  text-transform: uppercase;
-}
-
 .repair-list-container {
   position: relative;
   height: 100%;
@@ -1820,82 +1626,6 @@ button.swiper-pagination-bullet {
     width: 224px;
     height: 160px;
   }
-}
-
-/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
-т.к. там специфиичность задана через селектор дочерних элементов*/
-.repair-block .swiper-pagination {
-  bottom: 18px;
-}
-
-.show-more-repair-button {
-  display: none;
-}
-@media (min-width: 768px) {
-  .show-more-repair-button {
-    display: block;
-    background-color: #f8f8f8;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding-left: 24px;
-    width: 150px;
-    height: 20px;
-  }
-}
-.show-more-repair-button__text {
-  font-family: "TTLakes", "Arial", sans-serif;
-  color: #1b1c21;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-wrap: nowrap;
-  padding-left: 25px;
-  background-image: url(./static/Expand.png);
-  background-repeat: no-repeat;
-  background-position: 0 -1px;
-}
-
-@media (min-width: 768px) {
-  .swiper-pagination {
-    display: none;
-  }
-}
-
-.prices-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-color: #f8f8f8;
-  border-top: 0.4px solid #d9fff5;
-  padding-bottom: 40px;
-}
-@media (min-width: 768px) {
-  .prices-block {
-    width: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .prices-block {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
-.heading-block {
-  box-sizing: border-box;
-  min-width: 320px;
-  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
-}
-@media (min-width: 768px) {
-  .heading-block {
-    min-width: 768px;
-  }
-}
-.heading-block__title {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 16px;
-  color: #7e7e82;
-  text-transform: uppercase;
 }
 
 .prices-list-container {
@@ -2054,12 +1784,6 @@ button.swiper-pagination-bullet {
   .prices-list--table-column-fourth {
     width: 119px;
   }
-}
-
-/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
-т.к. там специфиичность задана через селектор дочерних элементов*/
-.prices-block .swiper-pagination {
-  bottom: 18px;
 }
 
 .extra-info {
@@ -2233,19 +1957,6 @@ button.swiper-pagination-bullet {
   -webkit-filter: opacity(80%);
           filter: opacity(80%);
 }
-.navigation-header--close-image {
-  background-image: url(./static/Close.png);
-  background-repeat: no-repeat;
-}
-@media (min-width: 1440px) {
-  .navigation-header--close-image {
-    display: none;
-  }
-}
-.navigation-header--search-image {
-  background-image: url(./static/Search.png);
-  background-repeat: no-repeat;
-}
 
 .navigation-menu {
   width: 100%;
@@ -2310,18 +2021,6 @@ button.swiper-pagination-bullet {
   -webkit-filter: opacity(80%);
           filter: opacity(80%);
 }
-.contact-buttons--call-image {
-  background-image: url(./static/Call.png);
-  background-repeat: no-repeat;
-}
-.contact-buttons--chat-image {
-  background-image: url(./static/Chat.png);
-  background-repeat: no-repeat;
-}
-.contact-buttons--profile-image {
-  background-image: url(./static/Profile.png);
-  background-repeat: no-repeat;
-}
 
 .contact-info {
   padding: 10px 24px;
@@ -2342,6 +2041,7 @@ button.swiper-pagination-bullet {
   box-sizing: border-box;
 }
 .lang-navigation__item {
+  display: inline-block;
   color: inherit;
   font-weight: 500;
   margin-right: 6px;
@@ -2426,14 +2126,8 @@ body {
   }
 }
 
-.call-close-button {
-  width: 40px;
-  height: 40px;
-  background-image: url(./static/Close.png);
-  background-repeat: no-repeat;
-}
 @media (min-width: 768px) {
-  .call-close-button {
+  .call-button {
     position: absolute;
     top: 24px;
     left: -60px;
@@ -2566,14 +2260,8 @@ body {
   }
 }
 
-.feedback-close-button {
-  width: 40px;
-  height: 40px;
-  background-image: url(./static/Close.png);
-  background-repeat: no-repeat;
-}
 @media (min-width: 768px) {
-  .feedback-close-button {
+  .feedback-button {
     position: absolute;
     top: 24px;
     left: -60px;
@@ -2669,6 +2357,157 @@ body {
   align-self: center;
   color: white;
   font-weight: 500;
+}
+
+.services-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  border-top: 0.4px solid #d9fff5;
+}
+@media (min-width: 768px) {
+  .services-block {
+    min-width: 768px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .services-block {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.heading-block {
+  box-sizing: border-box;
+  min-width: 320px;
+  background-image: linear-gradient(to right, #f8f8f8 40%, #ffffff 100%);
+}
+@media (min-width: 768px) {
+  .heading-block {
+    min-width: 768px;
+  }
+}
+.heading-block__title {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 16px;
+  color: #7e7e82;
+  text-transform: uppercase;
+}
+
+/* Повышаю специфичность селектора, чтобы эти стили были в приоритете перед библиотечными,
+т.к. там специфиичность задана через селектор дочерних элементов*/
+.services-block .swiper-pagination {
+  bottom: 18px;
+}
+
+.show-more-button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-more-button {
+    display: block;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 24px;
+    width: 150px;
+    height: 20px;
+  }
+}
+.show-more-button__text {
+  font-family: "TTLakes", "Arial", sans-serif;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-wrap: nowrap;
+  padding-left: 25px;
+  background-image: url(./static/Expand.png);
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+}
+
+.round-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.round-button--burger {
+  background-image: url(./static/Burger.png);
+  background-repeat: no-repeat;
+}
+.round-button--repair {
+  background-image: url(./static/Repair.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button--repair {
+    display: flex;
+    justify-content: flex-start;
+    width: 190px;
+    height: 40px;
+    background-image: url(./static/Repair.png);
+    background-position: 95%;
+  }
+}
+.round-button--checkstatus {
+  background-image: url(./static/Checkstatus.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button--checkstatus {
+    display: flex;
+    justify-content: flex-start;
+    width: 190px;
+    height: 40px;
+    background-image: url(./static/Checkstatus.png);
+    background-position: 95%;
+  }
+}
+.round-button--profile {
+  background-image: url(./static/Profile.png);
+  background-repeat: no-repeat;
+}
+.round-button--call {
+  background-image: url(./static/Call.png);
+  background-repeat: no-repeat;
+}
+.round-button--chat {
+  background-image: url(./static/Chat.png);
+  background-repeat: no-repeat;
+}
+.round-button__text--hidden {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .round-button__text {
+    display: inline;
+    text-decoration: none;
+    margin-right: 8px;
+    height: 40px;
+    white-space: nowrap;
+    padding-top: 8px;
+    color: #1b1c21;
+    font-family: "TTLakes", "Arial", serif;
+    font-style: normal;
+  }
+}
+.round-button--close {
+  width: 40px;
+  height: 40px;
+  background-image: url(./static/Close.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .round-button--close {
+    display: none;
+  }
+}
+.round-button--search {
+  background-image: url(./static/Search.png);
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map*/
