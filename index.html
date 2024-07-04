@@ -24,7 +24,7 @@
                 </li>
                 <li class="menu-item menu-item--group menu-item--hidden-for-width1440">
                   <a href="/" class="menu-item menu-item--link">
-                    <img src="./img/Group.png">
+                    <img src="./img/Group.png" alt="Логотип компании">
                   </a>
                 </li>
               </ul>
@@ -32,10 +32,10 @@
             <li>
               <ul class="menu-division">
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1440">
-                  <button href="/" class="menu-item menu-item--call"> </button>
+                  <button class="menu-item menu-item--call"> </button>
                 </li>
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1440">
-                  <button href="/" class="menu-item menu-item--chat"> </button>
+                  <button class="menu-item menu-item--chat"> </button>
                 </li>
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1440">
                   <a href="/" class="menu-item menu-item--profile"> </a>
@@ -63,7 +63,7 @@
             <h1 class="title__text">Услуги и сервисы</h1>
           </div>
           <nav class="navigation-block">
-            <ul type="none" class="nav">
+            <ul class="nav">
               <li class="nav-item">
                 <a href="/" class="nav-item__link">
                   Ремонтируемые устройства
@@ -305,7 +305,7 @@
           <a href="/" class="extra-info__link">Получить коммерческое предложение</a>
         </footer>
       </section>
-      <section class="footer-block">
+      <footer class="footer-block">
         <p class="footer-block__copyright">
           <span class="footer-block__first-part">&copy; 2019</span>
           <span class="footer-block__second-part">Разработано командой Apesong</span>
@@ -314,7 +314,7 @@
         <p class="footer-block__oferta">Информация, размещенная на данной странице, не является публичной
           офертой
         </p>
-      </section>
+      </footer>
       <aside class="sidebar-container">
         <section class="top-block">
           <header class="navigation-header">
@@ -374,11 +374,11 @@
           </nav>
         </footer>
       </aside>
-      <section class="call-container">
+      <aside class="call-container">
         <button class="call-close-button"> </button>
         <h2 class="call-header">Заказать звонок</h2>
         <form action="#" method="post" class="call-form">
-          <input class="call-form__phone-input" type="tel" pattern="[0-9]{11}" placeholder="Телефон" autofocus required minlength="11" maxlength="11">
+          <input class="call-form__phone-input" type="tel" pattern="[0-9]{11}" placeholder="Телефон" required minlength="11" maxlength="11">
           <section class="personal-data">
             Нажимая “отправить”, вы даете согласие на
             <a href="/" class="personal-data--pink">обработку персональных данных</a>
@@ -389,12 +389,12 @@
             <span class="call-send-button__text">Отправить</span>
           </button>
         </form>
-      </section>
-      <section class="feedback-container">
+      </aside>
+      <aside class="feedback-container">
         <button class="feedback-close-button"> </button>
         <h2 class="feedback-header">Обратная связь</h2>
         <form action="#" method="post" class="feedback-form">
-          <input class="feedback-form__input" type="text" placeholder="Имя" autofocus required>
+          <input class="feedback-form__input" type="text" placeholder="Имя" required>
           <input class="feedback-form__input" type="text" placeholder="Фамилия" required>
           <input class="feedback-form__input" type="email" placeholder="Электронная почта" required>
           <textarea name="feedback" class="feedback-form__text"></textarea>
@@ -408,7 +408,7 @@
             <span class="feedback-send-button__text">Отправить</span>
           </button>
         </form>
-      </section>
+      </aside>
       <section class="page-spacer"></section>
     </section>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
