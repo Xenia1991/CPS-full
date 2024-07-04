@@ -1,7 +1,7 @@
 import {sidebarMenu} from "./side-menu.js";
 
 const feedbackFormContainer = document.querySelector('.feedback-container');
-const feedbackButtonSidebar = document.querySelector('.contact-buttons--chat-image');
+const feedbackButtonSidebar = document.querySelector('.contact-buttons__item--chat-image');
 const feedbackButtonNav = document.querySelector('.menu-item--chat');
 const closeButton = document.querySelector('.feedback-close-button');
 const whiteBackground = document. querySelector('.page-spacer');
