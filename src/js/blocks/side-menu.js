@@ -1,6 +1,6 @@
 const sidebarMenu = document.querySelector('.sidebar-container')
-const openButton = document.querySelector('.menu-item--burger')
-const closeButton = document.querySelector('.navigation-header__item--close-image')
+const openButton = document.querySelector('.round-button--burger')
+const closeButton = document.querySelector('.round-button--close')
 
 const openSidebarMenu = function () {
     sidebarMenu.classList.remove('sidebar-container')

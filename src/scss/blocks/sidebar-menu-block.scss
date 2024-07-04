@@ -73,17 +73,6 @@
       transition-timing-function: ease-in;
       filter: opacity(80%);
     }
-    &--close-image {
-      background-image: url('../img/Close.png');
-      background-repeat: no-repeat;
-      @media (min-width: 1440px) {
-        display: none;
-      }
-    }
-    &--search-image {
-      background-image: url('../img/Search.png');
-      background-repeat: no-repeat;
-    }
   }
 }
 
@@ -147,18 +136,6 @@
       transition-duration: 500ms;
       transition-timing-function: ease-in;
       filter: opacity(80%);
-    }
-    &--call-image {
-      background-image: url('../img/Call.png');
-      background-repeat: no-repeat;
-    }
-    &--chat-image {
-      background-image: url('../img/Chat.png');
-      background-repeat: no-repeat;
-    }
-    &--profile-image {
-      background-image: url('../img/Profile.png');
-      background-repeat: no-repeat;
     }
   }
 }

@@ -10,14 +10,24 @@
     background-image: url('../img/Repair.png');
     background-repeat: no-repeat;
     @media (min-width: 1440px) {
-      background-image: none;
+      display: flex;
+      justify-content: flex-start;
+      width: 190px;
+      height: 40px;
+      background-image: url('../img/Repair.png');
+      background-position: 95%;
     }
   }
   &--checkstatus {
     background-image: url('../img/Checkstatus.png');
     background-repeat: no-repeat;
     @media (min-width: 1440px) {
-      background-image: none;
+      display: flex;
+      justify-content: flex-start;
+      width: 190px;
+      height: 40px;
+      background-image: url('../img/Checkstatus.png');
+      background-position: 95%;
     }
   }
   &--profile {
@@ -30,6 +40,35 @@
   }
   &--chat {
     background-image: url('../img/Chat.png');
+    background-repeat: no-repeat;
+  }
+  &__text--hidden {
+    display: none;
+  }
+  &__text {
+    @media (min-width: 1440px) {
+      display: inline;
+      text-decoration: none;
+      margin-right: 8px;
+      height: 40px;
+      white-space: nowrap;
+      padding-top: 8px;
+      color: #1b1c21;
+      font-family: 'TTLakes', 'Arial', serif;
+      font-style: normal;
+    }
+  }
+  &--close {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/Close.png');
+    background-repeat: no-repeat;
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+  &--search{
+    background-image: url('../img/Search.png');
     background-repeat: no-repeat;
   }
 }

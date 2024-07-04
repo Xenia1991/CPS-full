@@ -1,9 +1,9 @@
 import {sidebarMenu} from "./side-menu.js";
 
 const callFormContainer = document.querySelector('.call-container');
-const callButtonSidebar = document.querySelector('.contact-buttons__item--call-image');
-const callButtonNav = document.querySelector('.menu-item--call');
-const closeButton = document.querySelector('.call-close-button');
+const callButtonSidebar = document.querySelector('.button--opened-call');
+const callButtonNav = document.querySelector('.round-button--call');
+const closeButton = document.querySelector('.call-button');
 const whiteBackground = document. querySelector('.page-spacer');
 
 const openCallForm = function () {

@@ -46,16 +46,14 @@
                   </li>
                   <li class="menu-item menu-item--divider menu-item--hidden-for-width1440">
                   </li>
-                  <li class="menu-item menu-item--visible-for-width1440 menu-item--repair-width-1440">
+                  <li class="menu-item">
                     <button class="round-button round-button--repair">
-                      <span class="menu-item__text menu-item__text--hidden">Оставить заявку</span>
-                      <div class="menu-item__image--repair-width-1440"></div>
+                      <span class="round-button__text round-button__text--hidden">Оставить заявку</span>
                     </button>
                   </li>
-                  <li class="menu-item menu-item--visible-for-width1440">
+                  <li class="menu-item">
                     <button class="round-button round-button--checkstatus">
-                      <span class="menu-item__text menu-item__text--hidden">Статус ремонта</span>
-                      <div class="menu-item__image--checkstatus-width-1440"></div>
+                      <span class="round-button__text round-button__text--hidden">Статус ремонта</span>
                     </button>
                   </li>
                 </ul>
@@ -373,15 +371,11 @@
       <aside class="sidebar-container">
         <section class="top-block">
           <header class="navigation-header">
-            <button
-              class="navigation-header__item navigation-header__item--close-image"
-            ></button>
+            <button class="navigation-header__item round-button--close"></button>
             <a class="navigation-header__item">
               <img src="./img/Group.png" alt="Логотип компании" />
             </a>
-            <button
-              class="navigation-header__item navigation-header__item--search-image"
-            ></button>
+            <button class="navigation-header__item round-button--search"></button>
           </header>
           <nav class="navigation-menu">
             <ul class="menu-list">
@@ -415,13 +409,13 @@
         <footer class="bottom-block">
           <nav class="contact-buttons">
             <button
-              class="contact-buttons__item contact-buttons__item--call-image"
+              class="contact-buttons__item round-button--call button--opened-call"
             ></button>
             <button
-              class="contact-buttons__item contact-buttons__item--chat-image"
+              class="contact-buttons__item round-button--chat button--opened-chat"
             ></button>
             <button
-              class="contact-buttons__item contact-buttons__item--profile-image"
+              class="contact-buttons__item round-button--profile"
             ></button>
           </nav>
           <div class="contact-info">
@@ -440,7 +434,7 @@
         </footer>
       </aside>
       <aside class="call-container">
-        <button class="call-close-button"> </button>
+        <button class="call-button round-button--close"> </button>
         <h2 class="call-header">Заказать звонок</h2>
         <form action="#" method="post" class="call-form">
           <input
@@ -468,7 +462,7 @@
         </form>
       </aside>
       <aside class="feedback-container">
-        <button class="feedback-close-button"> </button>
+        <button class="feedback-button round-button--close"> </button>
         <h2 class="feedback-header">Обратная связь</h2>
         <form action="#" method="post" class="feedback-form">
           <input
