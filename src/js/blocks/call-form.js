@@ -1,4 +1,4 @@
-import {sidebarMenu} from "./side-menu.js";
+import {sidebarMenu} from "./sidebar-menu.js";
 
 const callFormContainer = document.querySelector('.call-container');
 const callButtonSidebar = document.querySelector('.button--opened-call');

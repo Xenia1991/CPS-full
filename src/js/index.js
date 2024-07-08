@@ -1,7 +1,7 @@
 import '../scss/style.scss';
-import '../js/blocks/brand-swiper';
-import '../js/blocks/repair-swiper';
-import '../js/blocks/prices-swiper';
-import '../js/blocks/side-menu';
+import './blocks/brand-slider';
+import './blocks/repair-slider';
+import './blocks/prices-slider';
+import '../js/blocks/sidebar-menu';
 import '../js/blocks/call-form';
 import '../js/blocks/feedback-form';

@@ -1,4 +1,4 @@
-import {sidebarMenu} from "./side-menu.js";
+import {sidebarMenu} from "./sidebar-menu.js";
 
 const feedbackFormContainer = document.querySelector('.feedback-container');
 const feedbackButtonSidebar = document.querySelector('.button--opened-chat');
