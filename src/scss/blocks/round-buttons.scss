@@ -3,49 +3,6 @@
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-  &--burger {
-    background-image: url('../img/Burger.png');
-    background-repeat: no-repeat;
-  }
-  &--repair {
-    background-image: url('../img/Repair.png');
-    background-repeat: no-repeat;
-    @media (min-width: 1440px) {
-      display: flex;
-      justify-content: flex-start;
-      width: 190px;
-      height: 40px;
-      background-image: url('../img/Repair.png');
-      background-position: 95%;
-    }
-  }
-  &--checkstatus {
-    background-image: url('../img/Checkstatus.png');
-    background-repeat: no-repeat;
-    @media (min-width: 1440px) {
-      display: flex;
-      justify-content: flex-start;
-      width: 190px;
-      height: 40px;
-      background-image: url('../img/Checkstatus.png');
-      background-position: 95%;
-    }
-  }
-  &--profile {
-    background-image: url('../img/Profile.png');
-    background-repeat: no-repeat;
-  }
-  &--call {
-    background-image: url('../img/Call.png');
-    background-repeat: no-repeat;
-  }
-  &--chat {
-    background-image: url('../img/Chat.png');
-    background-repeat: no-repeat;
-  }
-  &__text--hidden {
-    display: none;
-  }
   &__text {
     @media (min-width: 1440px) {
       display: inline;
@@ -58,26 +15,59 @@
       font-family: 'TTLakes', 'Arial', serif;
       font-style: normal;
     }
-  }
-  &__close {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/Close.png');
-    background-repeat: no-repeat;
-    &--menu {
-      @media (min-width: 1440px) {
-        display: none;
-      }
-    }
-    &--form {
+    &--hidden {
+      display: none;
       @media (min-width: 1440px) {
         display: block;
       }
     }
   }
-
+  &--burger {
+    background-image: url('../img/Burger.png');
+  }
+  &--profile {
+    background-image: url('../img/Profile.png');
+  }
+  &--call {
+    background-image: url('../img/Call.png');
+  }
+  &--chat {
+    background-image: url('../img/Chat.png');
+  }
   &--search{
     background-image: url('../img/Search.png');
-    background-repeat: no-repeat;
+  }
+  &--repair {
+    background-image: url('../img/Repair.png');
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: flex-start;
+      width: 190px;
+      height: 40px;
+      background-position: 95%;
+    }
+  }
+  &--checkstatus {
+    background-image: url('../img/Checkstatus.png');
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: flex-start;
+      width: 190px;
+      height: 40px;
+      background-position: 95%;
+    }
+  }
+  &--close {
+    background-image: url('../img/Close.png');
+  }
+  &--close-menu {
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+  &--close-form {
+    @media (min-width: 1440px) {
+      display: block;
+    }
   }
 }
