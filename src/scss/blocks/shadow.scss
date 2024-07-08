@@ -19,5 +19,26 @@
     @media (min-width: 768px) {
       display: block;
     }
+    &--before {
+      top: 75px;
+      height: 47px;
+      left: 0;
+      background-image: linear-gradient(
+        90deg,
+        #f8f8f8 20%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+  &--before {
+    left: 0;
+    background-image: linear-gradient(
+      90deg,
+      #f8f8f8 20%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
   }
 }
