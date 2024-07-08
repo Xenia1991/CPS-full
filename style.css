@@ -2048,7 +2048,7 @@ button.swiper-pagination-bullet {
   .page-container {
     display: grid;
     grid-template-columns: 320px 1120px;
-    grid-template-areas: "menu-block main-block" "menu-block main-block" "menu-block main-block" "menu-block footer-block";
+    grid-template-areas: "menu-block main-block" "menu-block footer-block";
   }
 }
 
