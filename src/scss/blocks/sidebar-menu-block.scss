@@ -24,6 +24,9 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #f8f8f8;
+    @media (min-width: 1440px) {
+      display: none;
+    }
     &::after {
       content: '';
       position: fixed;
@@ -36,9 +39,6 @@
       @media (min-width: 1440px) {
         display: none;
       }
-    }
-    @media (min-width: 1440px) {
-      display: none;
     }
   }
 }
@@ -56,7 +56,8 @@
   &__item {
     width: 42px;
     height: 42px;
-    cursor: pointer;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
     &:first-child {
       margin-right: 16px;
     }
@@ -69,8 +70,6 @@
     }
     &:hover {
       transform: scale(1.1);
-      transition-duration: 100ms;
-      transition-timing-function: ease-in;
       filter: opacity(80%);
     }
   }
@@ -83,9 +82,15 @@
 }
 
 .menu-list {
-  &__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 30px;
+  &__link {
+    display: block;
+    height: 40px;
     padding-left: 24px;
-    padding-top: 30px;
+    align-content: center;
     position: relative;
     &::before {
       content: '';
@@ -94,7 +99,7 @@
       background-color: transparent;
       position: absolute;
       left: 0px;
-      bottom: -6px;
+      bottom: 4px;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
     }
@@ -124,17 +129,14 @@
   &__item {
     width: 40px;
     height: 40px;
-    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
     &:hover {
       transform: scale(1.1) rotate(360deg);
-      transition-duration: 500ms;
-      transition-timing-function: ease-in;
       filter: opacity(80%);
     }
     &:active {
       transform: scale(1.1) rotate(360deg);
-      transition-duration: 500ms;
-      transition-timing-function: ease-in;
       filter: opacity(80%);
     }
   }
@@ -143,9 +145,13 @@
 .contact-info {
   padding: 10px 24px;
   &__mail {
+    display: block;
+    width: 100%;
     padding: 10px 0px;
   }
   &__phone {
+    display: block;
+    width: 100%;
     font-size: 24px;
     font-weight: 700;
     padding: 8px 0px;
@@ -163,6 +169,7 @@
     font-weight: 500;
     margin-right: 6px;
     cursor: pointer;
+    transition: 300ms;
     &:active {
       filter: opacity(60%);
       transform: scale(1.2);
@@ -171,7 +178,6 @@
     &:hover {
       filter: opacity(60%);
       transform: scale(1.2);
-      transition: 300ms;
     }
   }
 }
